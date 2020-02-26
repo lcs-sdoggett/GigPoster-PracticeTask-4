@@ -33,7 +33,34 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your work below...
 
+canvas.fillColor = orange
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+canvas.drawShapesWithFill = false
 
+canvas.translate(to: Point(x: 275, y: 375))
+canvas.drawAxes()
+canvas.borderColor = offWhite
+canvas.rotate(by: 45)
+
+for sideLength in 0...6 {
+    
+            
+    canvas.drawRectangle(at: Point(x: 0, y: 0), width: 10 + sideLength*50, height: 10 + sideLength*50, anchoredBy: AnchorPosition.centre, borderWidth: 10)
+    
+}
+
+canvas.rotate(by: -45)
+canvas.translate(to: Point(x: 175, y: 375))
+canvas.drawAxes()
+canvas.borderColor = blue
+canvas.rotate(by: 45)
+
+for sideLength in 0...6 {
+    
+            
+    canvas.drawRectangle(at: Point(x: 0, y: 0), width: 10 + sideLength*50, height: 10 + sideLength*50, anchoredBy: AnchorPosition.centre, borderWidth: 10)
+    
+}
 /*:
  ## Use Source Control
  
